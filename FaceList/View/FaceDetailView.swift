@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct FaceDetailView: View {
     @StateObject private var viewModel: ViewModel
@@ -20,6 +21,14 @@ struct FaceDetailView: View {
             Text(viewModel.face.wrappedName)
                 .font(.largeTitle.bold())
                 .padding()
+            
+            Section {
+                Map(coordinateRegion: $viewModel.mapRegion, annotationItems: viewModel.locations) {_ in
+                    MapMarker(coordinate: viewModel.face.savedLocation)
+                }
+            } header: {
+                Text("Meeting location")
+            }
         }
     }
     

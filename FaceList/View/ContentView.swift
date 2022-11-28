@@ -22,9 +22,9 @@ struct ContentView: View {
                         HStack {
                             viewModel.loadImage(url: face.savedPath)
                              .resizable()
-                             .frame(width: 40, height: 40)
                              .clipShape(Circle())
                              .padding(.horizontal, 5)
+                             .frame(maxWidth: 60, maxHeight: 40)
                             Text(face.wrappedName)
                         }
                     }
@@ -41,6 +41,7 @@ struct ContentView: View {
                     }
                     .onChange(of: viewModel.inputImage) { _ in viewModel.showingNewFace = true}
                     .sheet(isPresented: $viewModel.showingImagePicker) {
+                        //ImagePicker(sourceType: .camera, image: $viewModel.inputImage)
                         ImagePicker(image: $viewModel.inputImage)
                     }
                     .sheet(isPresented: $viewModel.showingNewFace) {

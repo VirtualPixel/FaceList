@@ -9,6 +9,7 @@ import PhotosUI
 import SwiftUI
 
 struct ImagePicker: UIViewControllerRepresentable {
+        
     class Coordinator: NSObject, PHPickerViewControllerDelegate {
         func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
             // dismiss the picker
@@ -24,7 +25,7 @@ struct ImagePicker: UIViewControllerRepresentable {
                 }
             }
         }
-        
+        var sourceType: UIImagePickerController.SourceType = .camera
         var parent: ImagePicker
         
         init(_ parent: ImagePicker) {

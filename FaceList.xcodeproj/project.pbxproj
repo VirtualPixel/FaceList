@@ -20,11 +20,12 @@
 		5798BAA3293164DB007A71F6 /* Faces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5798BAA2293164DB007A71F6 /* Faces.swift */; };
 		5798BAA52932C2E7007A71F6 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5798BAA42932C2E7007A71F6 /* DataController.swift */; };
 		5798BAA82932C312007A71F6 /* FaceList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5798BAA62932C312007A71F6 /* FaceList.xcdatamodeld */; };
-		5798BAB02932E8F4007A71F6 /* SavedFace+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5798BAAE2932E8F4007A71F6 /* SavedFace+CoreDataClass.swift */; };
-		5798BAB12932E8F4007A71F6 /* SavedFace+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5798BAAF2932E8F4007A71F6 /* SavedFace+CoreDataProperties.swift */; };
 		5798BAB32933C6CD007A71F6 /* FileManager-DocumentsDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5798BAB22933C6CD007A71F6 /* FileManager-DocumentsDirectory.swift */; };
 		5798BAB52933C749007A71F6 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5798BAB42933C749007A71F6 /* FileManager.swift */; };
 		5798BAB72933CDD4007A71F6 /* FaceDetailView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5798BAB62933CDD4007A71F6 /* FaceDetailView-ViewModel.swift */; };
+		57A51FE62935217F00638FC5 /* LocationFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A51FE52935217F00638FC5 /* LocationFetcher.swift */; };
+		57A51FE9293524C000638FC5 /* SavedFace+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A51FE7293524C000638FC5 /* SavedFace+CoreDataClass.swift */; };
+		57A51FEA293524C000638FC5 /* SavedFace+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A51FE8293524C000638FC5 /* SavedFace+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,11 +44,12 @@
 		5798BAA2293164DB007A71F6 /* Faces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Faces.swift; sourceTree = "<group>"; };
 		5798BAA42932C2E7007A71F6 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		5798BAA72932C312007A71F6 /* FaceList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FaceList.xcdatamodel; sourceTree = "<group>"; };
-		5798BAAE2932E8F4007A71F6 /* SavedFace+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SavedFace+CoreDataClass.swift"; sourceTree = "<group>"; };
-		5798BAAF2932E8F4007A71F6 /* SavedFace+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SavedFace+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		5798BAB22933C6CD007A71F6 /* FileManager-DocumentsDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager-DocumentsDirectory.swift"; sourceTree = "<group>"; };
 		5798BAB42933C749007A71F6 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
 		5798BAB62933CDD4007A71F6 /* FaceDetailView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FaceDetailView-ViewModel.swift"; sourceTree = "<group>"; };
+		57A51FE52935217F00638FC5 /* LocationFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationFetcher.swift; sourceTree = "<group>"; };
+		57A51FE7293524C000638FC5 /* SavedFace+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SavedFace+CoreDataClass.swift"; sourceTree = "<group>"; };
+		57A51FE8293524C000638FC5 /* SavedFace+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SavedFace+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				5798BAA2293164DB007A71F6 /* Faces.swift */,
 				5798BAB22933C6CD007A71F6 /* FileManager-DocumentsDirectory.swift */,
 				5798BAB42933C749007A71F6 /* FileManager.swift */,
+				57A51FE52935217F00638FC5 /* LocationFetcher.swift */,
 				5798BAA92932C419007A71F6 /* CoreData */,
 			);
 			path = Model;
@@ -126,8 +129,8 @@
 			isa = PBXGroup;
 			children = (
 				572B6728292FFBDE0050F553 /* ContentView-ViewModel.swift */,
-				5798BAA029316204007A71F6 /* NewFace-ViewModel.swift */,
 				5798BAB62933CDD4007A71F6 /* FaceDetailView-ViewModel.swift */,
+				5798BAA029316204007A71F6 /* NewFace-ViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -135,8 +138,8 @@
 		5798BAA92932C419007A71F6 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				5798BAAE2932E8F4007A71F6 /* SavedFace+CoreDataClass.swift */,
-				5798BAAF2932E8F4007A71F6 /* SavedFace+CoreDataProperties.swift */,
+				57A51FE7293524C000638FC5 /* SavedFace+CoreDataClass.swift */,
+				57A51FE8293524C000638FC5 /* SavedFace+CoreDataProperties.swift */,
 				5798BAA42932C2E7007A71F6 /* DataController.swift */,
 				5798BAA62932C312007A71F6 /* FaceList.xcdatamodeld */,
 			);
@@ -214,20 +217,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				5798BAB52933C749007A71F6 /* FileManager.swift in Sources */,
-				5798BAB12932E8F4007A71F6 /* SavedFace+CoreDataProperties.swift in Sources */,
 				5798BAA3293164DB007A71F6 /* Faces.swift in Sources */,
 				5798BAA82932C312007A71F6 /* FaceList.xcdatamodeld in Sources */,
 				5798BA9F293161F4007A71F6 /* NewFace.swift in Sources */,
 				5798BA942930DD39007A71F6 /* Face.swift in Sources */,
+				57A51FE62935217F00638FC5 /* LocationFetcher.swift in Sources */,
 				572B671A292FFA7A0050F553 /* ContentView.swift in Sources */,
+				57A51FEA293524C000638FC5 /* SavedFace+CoreDataProperties.swift in Sources */,
 				572B6729292FFBDE0050F553 /* ContentView-ViewModel.swift in Sources */,
-				5798BAB02932E8F4007A71F6 /* SavedFace+CoreDataClass.swift in Sources */,
 				5798BAB32933C6CD007A71F6 /* FileManager-DocumentsDirectory.swift in Sources */,
 				5798BAA52932C2E7007A71F6 /* DataController.swift in Sources */,
 				5798BAA129316204007A71F6 /* NewFace-ViewModel.swift in Sources */,
 				5798BA9A29313286007A71F6 /* ImagePicker.swift in Sources */,
 				5798BA982930E051007A71F6 /* FaceDetailView.swift in Sources */,
 				572B6718292FFA7A0050F553 /* FaceListApp.swift in Sources */,
+				57A51FE9293524C000638FC5 /* SavedFace+CoreDataClass.swift in Sources */,
 				5798BAB72933CDD4007A71F6 /* FaceDetailView-ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,6 +365,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FaceList/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location.";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need access to photos to upload them.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -392,6 +398,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FaceList/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location.";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need access to photos to upload them.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

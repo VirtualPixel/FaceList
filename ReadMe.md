@@ -1,5 +1,5 @@
 # FaceList
-FaceList is an application showing knowledge of CoreData, CoreImage, Mapkit (To come), and the MVVM design pattern.
+FaceList is an application showing knowledge of CoreData, CoreImage, Mapkit, and the MVVM design pattern.
 
 Meet FaceList. Add new "Faces" so that you'll never forget the name or face of the person you just met again. Simply press the "Plus" button on the navigation bar, select a photo, choose a name, and save. The main screen of the application shows the list of saved names.
 
@@ -14,8 +14,10 @@ Since it's not efficient to save images to CoreData, I converted the image to a 
 - MVVM
 - SwiftUI
 - UIKit
+- MapKit
 - CoreData
 - CoreImage
+- CoreLocation
 
 ### Prerequisites
 - An iPhone running iOS 15 or later

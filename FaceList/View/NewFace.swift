@@ -41,9 +41,12 @@ struct NewFace: View {
     }
     
     func save() {
+        viewModel.setLocation()
         let cachedFace = SavedFace(context: moc)
         cachedFace.name = viewModel.name
         cachedFace.imageName = UUID()
+        cachedFace.longitude = viewModel.longitude
+        cachedFace.latitude = viewModel.latitude
         
         viewModel.saveImage(imageName: cachedFace.wrappedImageName)
         
